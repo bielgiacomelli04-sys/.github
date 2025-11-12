@@ -1,0 +1,27 @@
+# Global code owners and specialized ownership mapping
+@engineering-team
+
+# Specialized ownership
+/docs/ @technical-writers
+/terraform/ @devops-guardian @infrastructure-team
+/k8s/ @devops-guardian @sre-team
+/.github/workflows/ @devops-guardian @ci-cd-team
+
+# Security-sensitive areas (require security team approval)
+/app/auth/ @security-team
+/app/api/admin/ @security-team
+/secrets/ @security-team
+*/security.py @security-team
+*/auth.py @security-team
+
+# Frontend components
+/frontend/src/components/ @frontend-craftsman @design-team
+/frontend/src/styles/ @frontend-craftsman @design-team
+
+# Backend services
+/backend/services/ @backend-architect
+/backend/repositories/ @backend-architect
+/backend/migrations/ @backend-architect @database-team
+
+# Testing
+/tests/ @qa-security-analyst @engineering-team
